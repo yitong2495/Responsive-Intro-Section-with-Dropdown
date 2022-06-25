@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+        <title>Dropdown navigation</title>
+        <link rel="stylesheet" href="/styles/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- Mobile Dark Background -->
+            <div class="backOverlay" id="backOverlay"></div>
+            
+             
+            <nav>
+                <!-- Nav Head -->
+            <div class="navHeader">
+                <img src="/images/logo.svg">
+                <img src="/images/icon-menu.svg" class="open-menu">
+            </div>
+                <!-- SideNav -->
+                <div class="sideNav" id="sideNav">
+                    <img src="/images/icon-close-menu.svg" class="close-menu">
+                    <div class="nav-item">
+                        <div class="item">
+                            <a href="#" class="featureBtn">Feature <img class="arrow1" src="/images/icon-arrow-down.svg" ></a>
+                            <div class="featuresMenu">
+                                <a href="#" class="submenu-item"><img src="/images/icon-todo.svg" > Todo List</a>
+                                <a href="#" class="submenu-item"><img src="/images/icon-calendar.svg" > Calendar</a>
+                                <a href="#" class="submenu-item"><img src="/images/icon-reminders.svg" > Reminders</a>
+                                <a href="#" class="submenu-item"><img src="/images/icon-planning.svg" > Planning</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="companyBtn">Company <img class="arrow2" src="/images/icon-arrow-down.svg" ></a>
+                            <div class="companyMenu">
+                                <a href="#" class="submenu-item company-submenu">History</a>
+                                <a href="#" class="submenu-item company-submenu">Our Team</a>
+                                <a href="#" class="submenu-item company-submenu">Blog</a>
+                            </div>
+                        </div>
+                        <div class="item"> <a href="#">Careers</a></div>
+                        <div class="item"> <a href="#">About</a></div>
+                    </div>
+                    <!-- Login -->
+                <div class="login-item">
+                    <button class="login-btn">Login</button>
+                    <button class="reg-btn">Register</button>
+                </div>
+                </div>
+                
+            </nav>
+            <!-- Main -->
+            <section class="main">
+                <div class="heroImages">
+                    <img class="mobileImg" src="/images/image-hero-mobile.png" >
+                    <img class="desktopImg" src="/images/image-hero-desktop.png" >
+                </div>
+                <div class="left-content">
+                    <div class="siteInfo">
+                        <h2>Make Remote Work</h2>
+                        <p>Get your team in sync, no matter your location. Streamline processes, 
+                            create team rituals, and watch productivity soar.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="footer">
+                        <img src="/images/client-databiz.svg">
+                        <img src="/images/client-audiophile.svg">
+                        <img src="/images/client-meet.svg">
+                        <img src="/images/client-maker.svg">
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+
+        
+
+        <script src="/app.js"></script>
+    </body>
+</html>

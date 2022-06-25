@@ -1,0 +1,115 @@
+
+Next: 
+Style the navbar 
+Let the transition of the navbar smoother
+Desktop version
+
+//////////////////////////////////
+Mob version
+
+<nav>(takes up 90% width)
+    logo 
+    hamberger icon
+    <sidebar>
+        close icon 
+        [ul]
+            li -Features
+                [ul]
+                    li-todo list
+                    li-calendar
+                    li-reminders
+                    li-planning
+                [/ul]
+            li -Company
+                [ul]
+                    li-history
+                    li-our team
+                    li-blog
+                [/ul]
+            li -Careers
+            li -About
+        [/ul]
+         button
+         button
+    </sidebar>     
+</nav> 
+
+
+hero-image (takes up 100% width)
+/hero-image
+
+div.text (takes up 90% width)
+  heading-tag
+  /heading-tag
+  paragraph
+  /paragraph
+  button
+  /button
+/div.text
+
+footer  (takes up 90% width)
+  images
+/footer
+
+////////////////////////////////////////////////////////////////////////////////////////
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+Screen Breakpoint
+
+- Mobile: 375px
+- Ipad: 820px
+- Desktop: 1440px
+
+## Colors
+
+### Neutral
+
+- Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%)
+1`
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
+- Weights: 500, 700
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Desktop version
+
+<header>(90% width)
+    logo 
+    nav 
+    Login button
+    Register button 
+</header> 
+
+<div class="container>
+    <div>
+        h2
+        p-discription 18px
+         (Features Company Careers About Login Register Make remote work Get your
+        team in sync, no matter your location. Streamline processes, create team
+        rituals, and watch productivity soar. Learn more)
+
+        button
+        logo
+    </div>
+    
+    <div>
+        image
+    </div>
+</div?>
+
+font-family:Epilogue
+font-size: 500 700
+

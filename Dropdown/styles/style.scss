@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+$Almost-white: hsl(0, 0%, 98%);
+$Medium-gray: hsl(0, 0%, 41%);
+$Almost-balck: hsl(0, 0%, 8%);
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+html {
+    font-family: "Epilogue", sans-serif;
+    background-color: $Almost-white;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.3;
+}
+
+button {
+    cursor: pointer;
+    color: $Medium-gray;
+}
+a {
+    text-decoration: none;
+    color: $Medium-gray;
+}
+.login-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    button {
+        font-size: large;
+        border: none;
+        margin: 1rem auto;
+    }
+    .login-btn {
+        background-color: $Almost-white;
+    }
+    .reg-btn {
+        border: solid $Almost-balck 1px;
+        padding: 0.5rem 3.5rem;
+        border-radius: 5px;
+        background-color: $Almost-white;
+    }
+}
+// Mobile View
+@media (max-width: 820px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    // Nav Head
+    .navHeader {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 2rem auto;
+
+        .open-menu {
+            width: 3rem;
+            height: 2rem;
+        }
+    }
+    // SideNav
+    .backOverlay {
+        height: 100vh;
+        width: 100vh;
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.521);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .sideNav {
+        width: 65%;
+        height: 100%;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+        background-color: $Almost-white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        font-size: 1.5rem;
+
+        .close-menu {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 2rem;
+        }
+        .nav-item {
+            position: relative;
+            top: 5%;
+            width: 100%;
+            text-align: left;
+            margin-left: 3rem;
+            margin-top: 30px;
+
+            .featuresMenu {
+                display: flex;
+                flex-direction: column;
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+                display: none;
+
+                img {
+                    margin-right: 1rem;
+                }
+            }
+            .companyMenu {
+                display: flex;
+                flex-direction: column;
+                padding-left: 1rem;
+                display: none;
+            }
+        }
+    }
+    .show-nav {
+        transform: translateX(0);
+    }
+
+    // Main Section
+    .mobileImg {
+        display: block;
+        width: 100%;
+    }
+    .desktopImg {
+        display: none;
+    }
+    .siteInfo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+
+        h2 {
+            font-size: 35px;
+            font-weight: 700;
+            margin: 0 auto;
+            width: 90%;
+        }
+        p {
+            font-size: 1.4rem;
+            color: $Medium-gray;
+            line-height: 1.5;
+            margin: 0 auto;
+            width: 90%;
+        }
+        button {
+            align-self: center;
+            border: none;
+            background-color: $Almost-balck;
+            color: $Almost-white;
+            font-size: 16px;
+            padding: 1rem 1.6rem;
+            margin: 2rem 0;
+            border-radius: 15px;
+        }
+    }
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem auto;
+
+        img {
+            height: 20%;
+        }
+    }
+}
+
+// Desktop View
+@media (min-width: 821px) {
+    .mobileImg {
+        display: none;
+    }
+    .desktopImg {
+        display: block;
+        width: 100%;
+        padding: 0 5rem;
+    }
+    .open-menu {
+        display: none;
+    }
+    .close-menu {
+        display: none;
+    }
+    nav {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        margin: 1rem auto;
+        align-items: center;
+    }
+    .navHeader {
+        position: relative;
+        width: 10%;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .sideNav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        background-color: transparent;
+        padding-top: 0;
+        transform: translateX(0);
+        overflow: visible;
+
+        .nav-item {
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.7rem;
+            width: 40%;
+        }
+        .item {
+            padding: 0 1rem;
+            position: relative;
+        }
+        .featuresMenu {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 3rem;
+            right: 0rem;
+            padding: 1rem 2rem 1rem 1rem;
+            box-shadow: 8px 8px 8px gray;
+            border-radius: 10px;
+            background-color: $Almost-white;
+            width: 15rem;
+            .submenu-item {
+                margin-left: 1rem;
+            }
+            img {
+                margin-right: 0.3rem;
+            }
+        }
+        .companyMenu {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            box-shadow: 8px 8px 8px $Medium-gray;
+            border-radius: 10px;
+            width: 10rem;
+            background-color: $Almost-white;
+            .company-submenu {
+                margin-left: 1rem;
+            }
+        }
+    }
+    .login-item {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        margin-right: 2rem;
+        font-size: 1.7rem;
+        .login-btn {
+            margin-right: 2rem;
+        }
+    }
+    .main {
+        display: flex;
+        flex-direction: row-reverse;
+
+        .left-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 60%;
+            padding: 0 10rem;
+            justify-content: center;
+
+            h2 {
+                font-size: 5rem;
+                margin: 0 auto;
+                text-align: left;
+                line-height: normal;
+            }
+            p {
+                font-size: 1.6rem;
+                text-align: left;
+                color: $Medium-gray;
+                line-height: 1.5;
+                margin: 3rem 0;
+            }
+            button {
+                border: solid $Almost-balck 1px;
+                background-color: $Almost-white;
+                color: $Almost-balck;
+                font-size: 16px;
+                padding: 1rem 2.5rem;
+                margin: 2rem 0;
+                border-radius: 15px;
+                &:hover{
+                    background-color: $Almost-balck;
+                    color: $Almost-white;
+                }
+            }
+            .footer{
+                margin-top: 6rem;
+            }
+        }
+    }
+}
